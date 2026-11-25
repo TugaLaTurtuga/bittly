@@ -31,8 +31,11 @@
     --margin: 20px;
 }
 
+html {
+    background: color-mix(in oklab, var(--bg) 75%, var(--bg-mode));
+}
+
 body {
-    background: var(--light);
     font-family: "DepartureMono", "Departure Mono", monospace;
     margin: 20px;
     color: color-mix(in oklab, var(--bg) 20%, var(--dark));
@@ -47,8 +50,8 @@ background {
     width: 100vw;
 
     background-image: repeating-conic-gradient(
-        alpha(from var(--bg) / 75%) 0% 25%,
-	alpha(from var(--bg) / 70.5%) 0% 50%
+        color-mix(in oklab, var(--bg) 75%, var(--bg-mode)) 0% 25%,
+        color-mix(in oklab, var(--bg) 70.5%, var(--bg-mode)) 0% 50%
     );
 
     background-size: 8vh 8vh;
