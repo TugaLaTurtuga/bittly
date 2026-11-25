@@ -32,13 +32,20 @@
 }
 
 html {
-    background: color-mix(in oklab, var(--bg) 75%, var(--bg-mode));
+    background-color: color-mix(in oklab, var(--bg) 75%, var(--bg-mode));
+    overflow: hidden;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
 }
 
 body {
     font-family: "DepartureMono", "Departure Mono", monospace;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
     color: color-mix(in oklab, var(--bg) 20%, var(--dark));
+    overflow: hidden;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
 }
 
 background {
