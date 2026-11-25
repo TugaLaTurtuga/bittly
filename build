@@ -1,0 +1,3 @@
+echo "Compiling ts..."
+tsc ts/index.ts --outDir js
+echo "Done"

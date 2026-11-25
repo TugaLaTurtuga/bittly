@@ -1,0 +1,67 @@
+@import url("css/css/index.css");
+@import url("css/landscape/index.css") screen and (orientation: landscape);
+@import url("css/portrait/index.css") screen and (orientation: portrait);
+
+@font-face {
+    font-family: "DepartureMono";
+    src: url("../fonts/DepartureMono/DepartureMono-Regular.woff2") format("woff2"),
+         url("../fonts/DepartureMono/DepartureMono-Regular.woff") format("woff"),
+         url("../fonts/DepartureMono/DepartureMono-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Departure Mono";
+    src: url("../fonts/DepartureMono/DepartureMono-Regular.woff2") format("woff2"),
+         url("../fonts/DepartureMono/DepartureMono-Regular.woff") format("woff"),
+         url("../fonts/DepartureMono/DepartureMono-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --bg: rgb(0, 139, 139);
+    --bg-mode: rgb(235, 235, 235);
+    --light: rgb(235, 235, 235);
+    --dark: rgb(20, 20, 20);
+    --accent-color: rgb(255, 255, 0);
+    --margin: 20px;
+}
+
+body {
+    background: var(--light);
+    font-family: "DepartureMono", "Departure Mono", monospace;
+    margin: 20px;
+    color: color-mix(in oklab, var(--bg) 20%, var(--dark));
+}
+
+background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: repeating-conic-gradient(
+        alpha(from var(--bg) / 75%) 0% 25%,
+	alpha(from var(--bg) / 70.5%) 0% 50%
+    );
+
+    background-size: 8vh 8vh;
+
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -8vh -8vh;
+    }
+}
+

@@ -1,0 +1,61 @@
+.main {
+	justify-self: center;
+}
+
+.main .main-menu *, .main .main-menu {
+	justify-self: center;
+}
+
+.main .title {
+	--font-size: 5rem;
+	justify-self: center;
+	transition: .2s ease all;
+}
+
+.main .main-menu .button {
+	cursor: pointer;
+	display: flex;
+	gap: 10px;
+}
+
+.main .main-menu .button {
+	margin: 2.5rem;
+}
+
+.main .main-menu .button .text {
+	--font-size: 2.5rem;
+}
+
+.main .showspace {
+	display: none;
+}
+
+.main .main-menu .button .right {
+	padding-left: 1rem;
+	opacity: 0;
+	transition: .2s ease all;
+}
+
+.main .main-menu .button .left {
+	padding-right: 1rem;
+	opacity: 0;
+	transition: .2s ease all;
+}
+
+.main .main-menu .button:hover .left,
+.main .main-menu .button:hover .right {
+	padding-left: 0rem;
+	padding-right: 0rem;
+	opacity: 1;
+}
+
+.main .main-menu .button .text {
+	transition: .2s ease all;
+
+}
+
+.main .main-menu .button:hover .text {
+	color: var(--accent-color);
+	padding: .5rem 0 .5rem 0;
+}
+

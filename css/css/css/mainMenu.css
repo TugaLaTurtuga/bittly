@@ -1,0 +1,17 @@
+.main .main-menu .button {
+	cursor: pointer;
+	display: block;
+	gap: 10px;
+}
+
+.main .main-menu .button .text {
+	pointer-events: none;
+}
+
+.main .main-menu {
+	z-index: 5;
+}
+
+.main .main-menu .showspace {
+	z-index: 1;
+}

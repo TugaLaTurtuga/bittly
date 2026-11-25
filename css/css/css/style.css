@@ -1,0 +1,58 @@
+:root {
+    --shadow-size: 0.08em;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    font-size: var(--font-size);
+    text-shadow:
+        calc(var(--shadow-size) * 1.5) 0                              var(--dark),
+        calc(var(--shadow-size) * 1.5) calc(var(--shadow-size) * 1.5) var(--dark),
+        var(--shadow-size)             0                              var(--dark),
+        calc(var(--shadow-size) * -1)  0                              var(--dark),
+        0                              var(--shadow-size)             var(--dark),
+        0                              calc(var(--shadow-size) * -1)  var(--dark),
+        var(--shadow-size)             var(--shadow-size)             var(--dark),
+        calc(var(--shadow-size) * -1)  calc(var(--shadow-size) * -1)  var(--dark),
+        var(--shadow-size)             calc(var(--shadow-size) * -1)  var(--dark),
+        calc(var(--shadow-size) * -1)  var(--shadow-size)             var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+}
+
+p, div {
+    color: var(--light);
+}
+
+h1 {
+    --font-size: 2rem;
+}
+
+h2 {
+    --font-size: 1.6rem;
+}
+
+h3 {
+    --font-size: 1.3rem;
+}
+
+h4 {
+    --font-size: 1.0rem;
+}
+
+h5 {
+    --font-size: 0.8rem;
+}
+
+h6 {
+    --font-size: 0.5rem;
+}
+
+p {
+    --font-size: 1.0rem;
+}
+
+div {
+    --font-size: 1.0rem;
+}

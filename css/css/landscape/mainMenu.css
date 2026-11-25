@@ -1,0 +1,48 @@
+.main {
+	position: absolute;
+	bottom: var(--margin);
+	left: var(--margin);
+}
+
+.main .title {
+	--font-size: 2rem;
+	transition: .2s ease all;
+}
+
+.main .showspace {
+	display: block;
+	position: fixed;
+	background: green;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	border: var(--dark) solid 5px;
+	width: 90vh;
+	height: 60vh;
+}
+
+.main .main-menu .button .right {
+	display: none;
+}
+
+.main .main-menu .button .left {
+	position: absolute;
+	left: -1rem;
+	opacity: 0;
+	transition: .2s ease all;
+}
+
+.main .main-menu .button:hover .left {
+	opacity: 1;
+}
+
+.main .main-menu .button .text {
+	transition: .2s ease all;
+
+}
+
+.main .main-menu .button:hover .text {
+	color: var(--accent-color);
+	padding-left: 1rem;
+}
+
